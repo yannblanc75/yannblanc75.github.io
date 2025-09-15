@@ -6,24 +6,54 @@
     "category": "web",
     "technologies": ["React", "Node.js", "MongoDB", "Express", "JWT"],
     "media": [
-      {
-        "type": "image",
-        "url": "/images/projects/launcher-1.jpg",
-        "alt": "Interface du launcher"
-      },
-      {
-        "type": "video",
-        "url": "/videos/projects/launcher-demo.mp4",
-        "poster": "/images/projects/launcher-poster.jpg"
-      }
+      { "type": "image", "url": "/images/projects/launcher-1.jpg", "alt": "Interface du launcher" },
+      { "type": "video", "url": "/videos/projects/launcher-demo.mp4", "poster": "/images/projects/launcher-poster.jpg" }
     ],
     "githubUrl": "https://github.com/yannblanc/game-launcher",
     "liveUrl": "https://game-launcher-demo.vercel.app",
     "startDate": "2024-01-15",
     "endDate": "2024-03-20",
     "status": "completed",
-    "detailedDescription": "Ce projet consiste en un portail web complet permettant aux étudiants de publier et jouer à des jeux développés dans le cadre de leurs cours...",
+    "detailedDescription": "Portail web complet permettant aux étudiants de publier et jouer à des jeux développés...",
     "challenges": "Sécurisation des uploads, gestion des sessions multiples, optimisation des performances",
     "learnings": "Approfondissement en sécurité web, architecture microservices"
-  }
+  },
+  {
+    "id": 2,
+    "title": "Conversion HTML/URL → PDF",
+    "description": "Mini-application web pour convertir du contenu HTML ou une page web (URL) en PDF, avec prévisualisation et historique.",
+    "category": "filRouge",
+    "technologies": ["Python Flask", "Jinja2", "WeasyPrint", "Playwright", "HTML/CSS", "Bootstrap"],
+    "media": [
+      { "type": "image", "url": "/images/projects/pdfapp-home.png", "alt": "Accueil de l’application (bienvenue)" },
+      { "type": "image", "url": "/images/projects/pdfapp-form.png", "alt": "Formulaire de saisie HTML et URL" },
+      { "type": "image", "url": "/images/projects/pdfapp-history.png", "alt": "Historique des documents générés" },
+      { "type": "image", "url": "/images/projects/pdfapp-wiki.png", "alt": "Exemple de PDF depuis Wikipédia" }
+    ],
+    "githubUrl": "https://github.com/yannblanc/html-to-pdf-miniapp",
+    "liveUrl": "",
+    "startDate": "2025-09-01",
+    "endDate": "2025-09-15",
+    "status": "completed",
+    "detailedDescription": "Projet du bloc 3 « Développement d’applications sécurisées ». Flask + Jinja2, PDF avec WeasyPrint, rendu navigateur Playwright, prévisualisation, historique téléchargeable.",
+    "challenges": "Validation stricte (Flask-WTF), rendu headless cohérent, isolement des fichiers générés, noms uniques.",
+    "learnings": "Pratiques Flask sécurisé, pipeline HTML→PDF, automatisation Playwright, venv/requirements/Makefile/instance."
+  },
+  {
+  "id":4,
+  "name":"PDF HTML→PDF",
+  "title":"Conversion HTML/URL → PDF",
+  "description":"Mini-application Flask pour convertir du HTML ou une URL en PDF, avec prévisualisation et historique.",
+  "category":"filRouge",
+  "technologies":["Python Flask","Jinja2","WeasyPrint","Playwright","HTML/CSS","Bootstrap"],
+  "status":"completed",
+  "image":"/images/projects/pdfapp-home.png",
+  "detailedDescription":"Backend Flask + Jinja2, génération PDF (WeasyPrint), rendu navigateur pour les URLs (Playwright), formulaire riche, et historique téléchargeable. Validation stricte (Flask-WTF), isolement des fichiers dans instance/generated.",
+  "mediaGallery":[
+    {"type":"image","url":"/images/projects/pdfapp-home.png","caption":"Accueil / Bienvenue"},
+    {"type":"image","url":"/images/projects/pdfapp-form.png","caption":"Formulaire HTML/URL"},
+    {"type":"image","url":"/images/projects/pdfapp-history.png","caption":"Historique des PDF"},
+    {"type":"image","url":"/images/projects/pdfapp-wiki.png","caption":"PDF depuis Wikipédia"}
+  ]
+}
 ]
