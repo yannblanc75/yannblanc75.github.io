@@ -25,17 +25,18 @@ const Projects = () => {
     if (category === 'all') {
       setFilteredProjects(projects);
     } else {
-      setFilteredProjects(projects.filter(project => 
-        project.category.toLowerCase() === category.toLowerCase()
+      setFilteredProjects(projects.filter(project =>
+        (project.category || '').toLowerCase() === category.toLowerCase()
       ));
     }
   };
 
-  const categories = ['all', 'web', 'cybersécurité', 'bioinformatique', 'ia', 'mobile'];
+  // Ajout de la nouvelle catégorie "filRouge"
+  const categories = ['all', 'filRouge', 'web', 'cybersécurité', 'bioinformatique', 'ia', 'mobile'];
 
   return (
     <div className="projects-page">
-      <motion.header 
+      <motion.header
         className="page-header"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -45,13 +46,13 @@ const Projects = () => {
         <p>Une collection de mes réalisations techniques et créatives</p>
       </motion.header>
 
-      <FilterBar 
+      <FilterBar
         categories={categories}
         activeFilter={activeFilter}
         onFilter={filterProjects}
       />
 
-      <motion.div 
+      <motion.div
         className="projects-grid"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
