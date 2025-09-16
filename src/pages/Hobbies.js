@@ -9,15 +9,14 @@ const Hobbies = () => {
       title: "Groupe de rock amateur",
       description: "Je joue de la guitare dans un groupe de rock amateur depuis 3 ans. Nous nous produisons régulièrement en concert.",
       images: [
-        "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=200&fit=crop",
-        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop"
+        '/images/hobbies/concert.png',
       ]
     },
     {
       id: 2,
       category: "🏃‍♂️ Sport",
-      title: "Escalade en salle",
-      description: "Pratique régulière de l'escalade en salle et en extérieur. C'est un excellent moyen de se maintenir en forme et de relever des défis.",
+      title: "Rugby à XV",
+      description: "Joueur Semi-professionnel au PARC (aujourd'hui Provence Rugby Club), joueur de 3ème ligne centre (8) puis 2ème ligne (4).Joueur pendant 20ans.",
       images: [
         "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=300&h=200&fit=crop",
         "https://images.unsplash.com/photo-1522163182402-834f871fd851?w=300&h=200&fit=crop"

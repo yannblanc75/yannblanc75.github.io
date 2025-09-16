@@ -17,11 +17,6 @@ const Projects = () => {
       status: "completed",
       image: "/p_AdminBDD/AppBanque.png",
       detailedDescription: "cette plateforme est faite avant tout pour les petits createurs et pour promouvoir leurs jeux.",
-      mediaGallery: [
-        { type: "image", url: "/p_AdminBDD/AppBanque.png", caption: "Interface application banque" },
-        { type: "image", url: "/p_AdminBDD/AppDoc.png", caption: "Interface médecin" },
-        { type: "image", url: "/p_AdminBDD/infoEmprunteur.png", caption: "Exemple de donnees emprunteurs" },
-      ]
     },
     {
       id: 1,
