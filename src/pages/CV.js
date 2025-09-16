@@ -38,32 +38,8 @@ const CV = () => {
           </button>
         </div>
 
-        <div className="cv-viewer-container">
-          {isLoading && (
-            <div className="cv-loading">
-              <div className="loading-spinner"></div>
-              <p>Chargement du CV en cours...</p>
-            </div>
-          )}
-          
-          {pdfError && (
-            <div className="cv-error">
-              <div className="error-icon">📄</div>
-              <h3>Aperçu du CV</h3>
-              <p>Le lecteur PDF intégré n'est pas disponible sur ce navigateur.</p>
-              <button className="cv-button" onClick={handleDownload}>
-                📥 Télécharger pour consulter le CV
-              </button>
-            </div>
-          )}
-
-          <iframe
-            src="/images/cv/cv-yann-blanc.pdf#toolbar=1&navpanes=0&scrollbar=1"
-            title="CV de Yann Blanc - Étudiant en Cybersécurité"
-            className={`cv-iframe ${isLoading ? 'loading' : ''} ${pdfError ? 'hidden' : ''}`}
-            onLoad={handlePdfLoad}
-            onError={handlePdfError}
-          />
+        <div className="cv-viewer-container">          
+          <embed className="cv" src="/cv/cv-yann-blanc.pdf#toolbar=1&navpanes=0&scrollbar=1" type="application/pdf"></embed>          
         </div>
 
         <div className="cv-info">
