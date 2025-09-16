@@ -1,114 +1,92 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import ProjectCard from '../components/ProjectCard';
 import './Home.css';
 
 const Home = () => {
   const mainProjects = [
     {
       id: 1,
-      title: "Launcher de jeux vidéo",
-      description: "Un portail web sécurisé pour héberger des jeux étudiants",
-      image: "/images/launcher-preview.jpg",
-      technologies: ["React", "Node.js", "MongoDB"]
-    },
-    {
-      id: 4,
-      title: "Conversion HTML/URL → PDF",
-      description: "Mini-app Flask pour générer des PDF depuis du HTML ou une URL (prévisualisation + historique)",
-      image: "/images/projects/pdfapp-home.png",
-      technologies: ["Flask", "WeasyPrint", "Playwright"]
+      title: "Gestion des droits utilisateurs bancaires",
+      description: "Plateforme sécurisée d'échange de données entre médecins et banquiers conforme aux normes HDS et ISO 27001",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
+      technologies: ["React", "Python Flask", "PHPMyAdmin"]
     },
     {
       id: 2,
-      title: "Automatisation CASTp",
-      description: "Extraction automatique des poches sur les protéines avec Python + Selenium",
-      image: "/images/castp-preview.jpg",
-      technologies: ["Python", "Selenium", "Bioinformatique"]
+      title: "Amélioration SI d'un CHU",
+      description: "Analyse complète des vulnérabilités et propositions d'amélioration selon la méthode HEBIOS de l'ANSSI",
+      image: "/p_filRouge/preview.png",
+      technologies: ["Méthode HEBIOS", "Analyse de risque", "Sécurité réseau"]
     },
     {
       id: 3,
-      title: "Détection de contamination en métagénomique",
-      description: "Pipeline de classification par apprentissage supervisé",
-      image: "/images/metagenomique-preview.jpg",
-      technologies: ["Python", "Machine Learning", "Bioinformatique"]
+      title: "Pentest OWASP Juice Shop",
+      description: "Pentest complet avec exploitation de vulnérabilités web et manipulation de JWT tokens",
+      image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=400&h=300&fit=crop",
+      technologies: ["Burp Suite", "Hydra", "JWT", "OSINT"]
     }
   ];
 
   return (
     <div className="home">
-      <motion.section
-        className="hero"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+      <section className="hero">
         <div className="hero-content">
-          <motion.h1
-            className="hero-title"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-          >
-            Yann Blanc
-          </motion.h1>
-          <motion.p
-            className="hero-subtitle"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-          >
-            Étudiant en cybersécurité & développeur passionné
-          </motion.p>
-          <motion.div
-            className="hero-description"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-          >
+          <h1 className="hero-title">Yann Blanc</h1>
+          <p className="hero-subtitle">Étudiant en cybersécurité & développeur passionné</p>
+          <div className="hero-description">
             <p>
-              Étudiant en Bachelor 3 à Ynov, spécialisé en cybersécurité.
+              Étudiant en Bachelor 3 à Ynov, spécialisé en cybersécurité. 
               Je développe des projets innovants alliant développement, IA et bioinformatique.
             </p>
-          </motion.div>
-          <motion.div
-            className="hero-cta"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-          >
+          </div>
+          <div className="hero-cta">
             <Link to="/projects" className="cta-button primary">
               Voir mes projets
             </Link>
             <Link to="/contact" className="cta-button secondary">
               Me contacter
             </Link>
-          </motion.div>
+          </div>
         </div>
         <div className="hero-visual">
-          <div className="geometric-shape"></div>
+          <div className="profile-section">
+            <img 
+              src="/images/pprosite.PNG" 
+              alt="Photo de profil de Yann Blanc"
+              className="profile-image"
+            />
+            <div className="profile-glow"></div>
+          </div>
         </div>
-      </motion.section>
+      </section>
 
-      <motion.section
-        className="featured-projects"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 0.8 }}
-      >
+      <section className="featured-projects">
         <h2>Projets principaux</h2>
         <div className="projects-grid">
           {mainProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} featured />
+            <div key={project.id} className="featured-project-card">
+              <img 
+                src={project.image} 
+                alt={project.title}
+                className="project-image"
+              />
+              <div className="project-content">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <div className="project-technologies">
+                  {project.technologies.map((tech, index) => (
+                    <span key={index} className="tech-tag">{tech}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
           ))}
         </div>
         <Link to="/projects" className="view-all-button">
           Voir tous mes projets →
         </Link>
-      </motion.section>
+      </section>
     </div>
   );
 };
-
 export default Home;

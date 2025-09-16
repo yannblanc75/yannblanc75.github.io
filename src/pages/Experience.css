@@ -1,0 +1,104 @@
+.experience-page {
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+.experience-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.experience-card {
+  background: var(--background-light);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+  transition: var(--transition);
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-light);
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.experience-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.experience-info h4 {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.period {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.missions-list {
+  margin: 1rem 0;
+}
+
+.missions-list h5 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.missions-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.missions-list li {
+  padding: 0.3rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.missions-list li:before {
+  content: "▶";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+}
+
+.technologies {
+  margin: 1rem 0;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--primary-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin: 0.2rem;
+}
+
+.add-experience-note {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(124, 58, 237, 0.1);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+}

@@ -7,7 +7,7 @@
     "endDate": "2024-08-31",
     "location": "Paris, France",
     "type": "stage",
-    "logo": "/images/companies/techcorp-logo.png",
+    "logo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=120&h=120&fit=crop",
     "missions": [
       "Développement d'applications web en React",
       "Participation aux tests de sécurité",

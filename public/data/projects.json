@@ -25,26 +25,5 @@
     "detailedDescription": "Ce projet consiste en un portail web complet permettant aux étudiants de publier et jouer à des jeux développés dans le cadre de leurs cours...",
     "challenges": "Sécurisation des uploads, gestion des sessions multiples, optimisation des performances",
     "learnings": "Approfondissement en sécurité web, architecture microservices"
-  },
-  {
-    "id": 2,
-    "title": "Conversion HTML/URL → PDF",
-    "description": "Mini-application web pour convertir du contenu HTML ou une page web (URL) en PDF, avec prévisualisation et historique.",
-    "category": "filRouge",
-    "technologies": ["Python Flask", "Jinja2", "WeasyPrint", "Playwright", "HTML/CSS", "Bootstrap"],
-    "media": [
-      { "type": "image", "url": "/images/projects/pdfapp-home.png", "alt": "Accueil de l’application (bienvenue)" },
-      { "type": "image", "url": "/images/projects/pdfapp-form.png", "alt": "Formulaire de saisie HTML et URL" },
-      { "type": "image", "url": "/images/projects/pdfapp-history.png", "alt": "Historique des documents générés" },
-      { "type": "image", "url": "/images/projects/pdfapp-wiki.png", "alt": "Exemple de PDF depuis Wikipédia" }
-    ],
-    "githubUrl": "https://github.com/yannblanc/html-to-pdf-miniapp",
-    "liveUrl": "",
-    "startDate": "2025-09-01",
-    "endDate": "2025-09-15",
-    "status": "completed",
-    "detailedDescription": "Projet du bloc 3 « Développement d’applications sécurisées ». Backend Flask + Jinja2, génération PDF WeasyPrint, rendu navigateur et capture fidèle via Playwright pour les URLs, prévisualisation avant export, et historique téléchargeable.",
-    "challenges": "Validation stricte des entrées (Flask-WTF), rendu headless cohérent pour les pages externes, sécurisation et isolement des fichiers générés, gestion de noms uniques.",
-    "learnings": "Montée en compétence sur Flask sécurisé, pipeline HTML→PDF, automatisation de rendu navigateur, et bonnes pratiques (venv, requirements, Makefile, instance/)."
   }
 ]

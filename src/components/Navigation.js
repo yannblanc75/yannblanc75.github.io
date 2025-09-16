@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import './Navigation.css';
 
 const Navigation = () => {
@@ -32,13 +31,6 @@ const Navigation = () => {
               onClick={() => setIsOpen(false)}
             >
               {item.label}
-              {location.pathname === item.path && (
-                <motion.div
-                  className="nav-underline"
-                  layoutId="underline"
-                  initial={false}
-                />
-              )}
             </Link>
           ))}
         </div>
