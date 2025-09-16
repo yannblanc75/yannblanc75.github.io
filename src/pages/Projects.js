@@ -8,18 +8,23 @@ const Projects = () => {
   
   const projects = [
     {
-      id: 0,
+      id: 1,
       name: "AKIROO",
       title: "Le Futur du Gaming",
       description: "Projet Ydays. Dans le cadre des projet Ydays, avec une equipe composer de developeur, comerciaux et expert cyber nous avons develloper une plateforme qui mets en avant les devellopeur de jeux videos et leurs creations.",
       category: "dev",
       technologies: ["React", "Python", "PHPMyAdmin"],
       status: "completed",
-      image: "/p_AdminBDD/AppBanque.png",
-      detailedDescription: "cette plateforme est faite avant tout pour les petits createurs et pour promouvoir leurs jeux.",
+      image: "/p_Akiroo/akiroo_banner.png",
+      detailedDescription: "Cette plateforme est faite avant tout pour les petits créateurs et pour promouvoir leurs jeux.",
+      mediaGallery: [
+        { type: "image", url: "/p_Akiroo/akiroo_home.png", caption: "Cartographie des risques" },
+        { type: "image", url: "/p_Akiroo/akiroo_assets.png", caption: "Matrice Initial" },
+        { type: "image", url: "/p_Akiroo/akiroo_mobile.png", caption: "Nouveaux schéma" }
+      ]
     },
     {
-      id: 1,
+      id: 2,
       name: "AdminBDD",
       title: "Gestion des droits utilisateurs bancaires",
       description: "Projet réalisé pour le module \"Administration Base de Données\". J'ai développé deux plateformes web reliées par une base de données. L'objectif était de permettre un échange de données sécurisé entre un médecin et un banquier dans le cadre d'une demande de prêt bancaire, en respectant les normes HDS, ISO 27001, et ISO 27799 pour la protection des données de santé.",
@@ -35,7 +40,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 2,
+      id: 3,
       name: "filRouge",
       title: "Amélioration du système d'information d'un CHU",
       description: "Dans ce projet fil rouge, j'ai analysé les failles logiques, physiques et organisationnelles d'un CHU fictif. J'ai réalisé un premier pentest interne, identifié les actifs critiques et obsolètes, proposé une nouvelle segmentation des VLANs, amélioré le PCA et PRA selon la méthode HEBIOS de l'ANSSI.",
@@ -51,7 +56,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 3,
+      id: 4,
       name: "Pentest",
       title: "Pentest d'un site web vulnérable (OWASP Juice Shop)",
       description: "Dans ce projet de cybersécurité, j'ai réalisé un pentest complet sur un site e-commerce fictif (Juice Shop – OWASP). J'ai mené des phases de reconnaissance, de tests automatisés et manuels. J'ai notamment exploité une faille d'authentification en manipulant un JWT token.",
