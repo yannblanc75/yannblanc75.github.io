@@ -5,25 +5,37 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      company: "TechCorp Solutions",
-      position: "Stagiaire Développeur",
-      startDate: "2024-06-01",
-      endDate: "2024-08-31",
-      location: "Paris, France",
-      type: "stage",
-      logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=120&h=120&fit=crop",
+      company: "Montpellier Ynov Campus",
+      position: "Mentor informatique",
+      startDate: "09-01-2024",
+      endDate: "09-30-2025",
+      location: "Montpellier, France",
+      type: "Alternance",
+      logo: "/images/experience/montpellier.png",
       missions: [
-        "Développement d'applications web en React",
-        "Participation aux tests de sécurité",
-        "Documentation technique"
+        "Coaching des étudiants informatique en bachelor 1 et 2",
+        "Faire rayonner le campus via des ateliers et événements",
       ],
-      technologies: ["React", "Python", "PostgreSQL"],
-      description: "Une expérience enrichissante qui m'a permis de découvrir le monde professionnel du développement. J'ai particulièrement apprécié le travail en équipe et l'apprentissage des bonnes pratiques de sécurité.",
-      skills: ["Travail en équipe", "Gestion de projet", "Communication client"],
-      achievements: [
-        "Amélioration des performances de 30%",
-        "Implémentation de nouvelles fonctionnalités"
-      ]
+      technologies: ["React", "Python", "PostgreSQL", "Git", "Docker", "C#", "Unity", "Golang", "Windows Server", "Linux", "Virtualisation"],
+      description: "Une expérience enrichissante qui m'a permis de découvrir le monde professionnel du mentorat. J'ai particulièrement apprécié le travail en équipe et l'apprentissage des bonnes pratiques de sécurité.",
+      skills: ["Travail en équipe", "Gestion de projet", "Communication", "Sécurité informatique", "Mentorat"]
+    },
+    {
+      id: 1,
+      company: "IRSEA",
+      position: "Developeur web",
+      startDate: "06-01-2024",
+      endDate: "08-30-2025",
+      location: "Montpellier, France",
+      type: "Stage",
+      logo: "/images/experience/logo-irsea-group.png",
+      missions: [
+        "Devellopement d'une landing page pour l'IRSEA",
+        "Aide à la maintenance du site web",
+      ],
+      technologies: ["Html", "CSS", "JavaScript", "React", "Figma"],
+      description: "Stage de 3 mois en tant que développeur web au sein de l'IRSEA. J'ai travaillé sur la création d'une landing page pour promouvoir les services de l'IRSEA, ainsi que sur la maintenance du site web existant.",
+      skills: ["Travail en équipe", "Communication", "SEO", "Design web", "Développement front-end", "UI/UX" ]
     }
   ];
 
@@ -72,18 +84,6 @@ const Experience = () => {
             </div>
           </div>
         ))}
-
-        <div className="experience-card">
-          <h3>Formation en cours</h3>
-          <h4>Ynov Campus - Bachelor Cybersécurité</h4>
-          <p className="period">2022 - 2025</p>
-          <p>Formation spécialisée en cybersécurité avec focus sur le développement sécurisé et l'analyse de vulnérabilités.</p>
-        </div>
-
-        <div className="add-experience-note">
-          <p>📝 Les nouvelles expériences professionnelles seront ajoutées ici au fur et à mesure.</p>
-          <p>Consultez le guide d'utilisation pour apprendre à ajouter vos expériences.</p>
-        </div>
       </div>
     </div>
   );

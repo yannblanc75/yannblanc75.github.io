@@ -18,28 +18,7 @@ const Hobbies = () => {
       title: "Rugby à XV",
       description: "Joueur Semi-professionnel au PARC (aujourd'hui Provence Rugby Club), joueur de 3ème ligne centre (8) puis 2ème ligne (4).Joueur pendant 20ans.",
       images: [
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=300&h=200&fit=crop",
-        "https://images.unsplash.com/photo-1522163182402-834f871fd851?w=300&h=200&fit=crop"
-      ]
-    },
-    {
-      id: 3,
-      category: "💻 Technologie",
-      title: "Veille technologique",
-      description: "Passionné par les nouvelles technologies, je consacre du temps à la veille technologique et aux projets open source.",
-      images: [
-        "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=300&h=200&fit=crop",
-        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=200&fit=crop"
-      ]
-    },
-    {
-      id: 4,
-      category: "📚 Lecture",
-      title: "Science-fiction et cybersécurité",
-      description: "Grand amateur de science-fiction et de livres techniques sur la cybersécurité. La lecture m'aide à rester inspiré et informé.",
-      images: [
-        "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop",
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop"
+        '/images/hobbies/rugby.png',
       ]
     }
   ];
