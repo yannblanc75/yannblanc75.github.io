@@ -71,6 +71,22 @@ const Projects = () => {
         { type: "image", url: "/p_Pentest/jwtio.png", caption: "Modification du token jwt" },
         { type: "image", url: "/p_Pentest/jwtAdmin.png", caption: "Connexion en tant qu'Administrateur" }
       ]
+    },
+    {
+      id: 5,
+      name: "SwingPDF",
+      title: "Convertisseur de fichiers HTML en PDF",
+      description: "A FAIRE",
+      category: "dev",
+      technologies: ["Python Flask", "Bootstrap", "WeasyPrint", "PlayWright"],
+      status: "completed",
+      image: "/p_SwingPDF/pdfapp-home.png",
+      detailedDescription: "",
+      mediaGallery: [
+        { type: "image", url: "/p_SwingPDF/pdfapp-form.png", caption: "A FAIRE" },
+        { type: "image", url: "/p_SwingPDF/pdfapp-wiki.png", caption: "A FAIRE" },
+        { type: "image", url: "/p_SwingPDF/pdfapp-history.png", caption: "A FAIRE" },
+      ]
     }
   ];
 
