@@ -45,7 +45,7 @@ const Projects = () => {
       image: "/p_filRouge/Schema.png",
       detailedDescription: "Projet d'envergure incluant l'analyse complète de la sécurité d'un établissement de santé. J'ai proposé des actions de sensibilisation du personnel avec mises en situation pratiques et développé un plan d'amélioration basé sur les recommandations de l'ANSSI.",
       mediaGallery: [
-        { type: "image", url: "/p_filRouge/Matrice des risque.png", caption: "Cartographie des risques" },
+        { type: "image", url: "/p_filRouge/Matrice des risque.jpg", caption: "Cartographie des risques" },
         { type: "image", url: "/p_filRouge/Matrice initiale.png", caption: "Matrice Initial" },
         { type: "image", url: "/p_filRouge/Schema.png", caption: "Nouveaux schéma" }
       ]
