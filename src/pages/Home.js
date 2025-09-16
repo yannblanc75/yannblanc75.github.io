@@ -14,8 +14,8 @@ const Home = () => {
     {
       id: 2,
       title: "Amélioration SI d'un CHU",
-      description: "Analyse complète des vulnérabilités et propositions d'amélioration selon la méthode HEBIOS de l'ANSSI",
-      image: "/p_filRouge/preview.png",
+      description: "Analyse complète des vulnérabilités et propositions d'amélioration selon la méthode EBIOS de l'ANSSI",
+      image: "/p_filRouge/Matrice des risque.jpg",
       technologies: ["Méthode HEBIOS", "Analyse de risque", "Sécurité réseau"]
     },
     {
