@@ -15,12 +15,12 @@ const Projects = () => {
       category: "dev",
       technologies: ["React", "Python", "PHPMyAdmin"],
       status: "completed",
-      image: "/p_Akiroo/akiroo_banner.png",
+      image: "/p_akiroo/akiroo_banner.png",
       detailedDescription: "Cette plateforme est faite avant tout pour les petits créateurs et pour promouvoir leurs jeux.",
       mediaGallery: [
-        { type: "image", url: "/p_Akiroo/akiroo_home.png", caption: "Page d'acceuil" },
-        { type: "image", url: "/p_Akiroo/akiroo_assets.png", caption: "Boutique d'assets" },
-        { type: "image", url: "/p_Akiroo/akiroo_mobile.png", caption: "Page de connexion mobile" }
+        { type: "image", url: "/p_akiroo/akiroo_home.png", caption: "Page d'acceuil" },
+        { type: "image", url: "/p_akiroo/akiroo_assets.png", caption: "Boutique d'assets" },
+        { type: "image", url: "/p_akiroo/akiroo_mobile.png", caption: "Page de connexion mobile" }
       ]
     },
     {
