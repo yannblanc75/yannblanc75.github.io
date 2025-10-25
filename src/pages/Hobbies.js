@@ -51,11 +51,6 @@ const Hobbies = () => {
             </div>
           ))}
         </div>
-
-        <div className="add-hobby-note">
-          <p>📸 Plus de médias et détails seront ajoutés prochainement.</p>
-          <p>Consultez le guide d'utilisation pour apprendre à ajouter vos loisirs.</p>
-        </div>
       </div>
     </div>
   );

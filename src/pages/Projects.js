@@ -76,17 +76,17 @@ const Projects = () => {
       id: 5,
       name: "SwingPDF",
       title: "Convertisseur de fichiers HTML en PDF",
-      description: "A FAIRE",
+      description: "Projet personnel. J'ai développé une application web permettant de convertir des fichiers HTML en PDF, avec génération automatique de formulaires et d'historiques de conversion. L'application utilise Python Flask pour le backend, Bootstrap pour le frontend, WeasyPrint pour la conversion HTML-PDF, et PlayWright pour les tests automatisés. Une securisation de base (chiffrement AES 256) a été implemente pour proteger l'acces à l'application.",
       category: "dev",
       technologies: ["Python Flask", "Bootstrap", "WeasyPrint", "PlayWright"],
       status: "completed",
       image: "/p_SwingPDF/SwingPDF.png",
       detailedDescription: "",
       mediaGallery: [
-        { type: "image", url: "/p_SwingPDF/pdfapp-home.png", caption: "A FAIRE" },
-        { type: "image", url: "/p_SwingPDF/pdfapp-form.png", caption: "A FAIRE" },
-        { type: "image", url: "/p_SwingPDF/pdfapp-wiki.png", caption: "A FAIRE" },
-        { type: "image", url: "/p_SwingPDF/pdfapp-history.png", caption: "A FAIRE" },
+        { type: "image", url: "/p_SwingPDF/pdfapp-home.png", caption: "Voici la page home, ou vous avez le choix d'utiliser un outil de conversion qui vas collecter les balises html d'une page pour le convertir en pdf ou convertir sans lien." },
+        { type: "image", url: "/p_SwingPDF/pdfapp-form.png", caption: "Vous avez un formlaire pour remplir certaines informations pour votre document." },
+        { type: "image", url: "/p_SwingPDF/pdfapp-wiki.png", caption: "Vous avez le convertisseur qui prend une url pour aller chercher sur le web les balises html." },
+        { type: "image", url: "/p_SwingPDF/pdfapp-history.png", caption: "Enfin un historique de vos convertions passé." },
       ]
     }
   ];

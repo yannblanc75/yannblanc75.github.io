@@ -7,7 +7,7 @@ const CV = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/images/cv/cv-yann-blanc.pdf';
+    link.href = '/images/cv/yann_blanc_cv_asi.pdf';
     link.download = 'CV_Yann_Blanc_Cybersécurité.pdf';
     document.body.appendChild(link);
     link.click();
